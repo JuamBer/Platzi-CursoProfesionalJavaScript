@@ -12,6 +12,13 @@ class MediaPlayer {
         });
     }
 
+    get muted() {
+        return this.video.muted;
+    }
+    set muted(muted) {
+        this.video.muted = muted;
+    }
+
     play() {
         this.video.play()
     }
@@ -29,11 +36,11 @@ class MediaPlayer {
     }
 
     toggleMute() {
-        this.video.muted = !this.video.muted
+        this.video.muted = this.video.muted
     }
 
     togglePlay() {
-        this.video.paused ? this.video.play() : this.video.pause();
+        this.video.getPaused() ? this.play() : this.video.pause();
     }
 }
 
