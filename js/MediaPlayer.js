@@ -1,6 +1,6 @@
 class MediaPlayer {
     constructor(video, plugins) {
-        this.video = video;
+        this.media = video;
         this.plugins = plugins || [];
 
         this._initPlugins();
@@ -13,34 +13,36 @@ class MediaPlayer {
     }
 
     get muted() {
-        return this.video.muted;
+        return this.media.muted;
     }
     set muted(muted) {
-        this.video.muted = muted;
+        this.media.muted = muted;
     }
 
     play() {
-        this.video.play()
+        console.log("Video play");
+        this.media.play()
     }
 
     pause() {
-        this.video.pause()
+        console.log("Video pause");
+        this.media.pause()
     }
 
     mute() {
-        this.video.muted = true;
+        this.media.muted = true;
     }
 
     unmute() {
-        this.video.muted = false;
+        this.media.muted = false;
     }
 
     toggleMute() {
-        this.video.muted = this.video.muted
+        this.media.muted = this.media.muted
     }
 
     togglePlay() {
-        this.video.getPaused() ? this.play() : this.video.pause();
+        this.media.paused ? this.play() : this.pause();
     }
 }
 

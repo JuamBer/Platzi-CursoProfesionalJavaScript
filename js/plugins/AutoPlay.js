@@ -3,9 +3,9 @@ class AutoPlay {
 
     }
 
-    run(video){
-        video.mute();
-        video.play();
+    run(player){
+        player.mute();
+        player.play();
     }
 }
 
