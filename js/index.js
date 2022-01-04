@@ -12,7 +12,7 @@ btn_play.onclick = () => player.togglePlay();
 btn_mute.onclick = () => player.toggleMute();
 
 if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('./js/plugins/sw.js').catch(error => {
+    navigator.serviceWorker.register('./plugins/sw.js').catch(error => {
         console.log(error.message);
     })
 }

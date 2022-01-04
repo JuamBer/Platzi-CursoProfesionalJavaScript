@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
   "keywords": [],
   "author": "Juan Sáez García <contacto@juamber.com>",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.5.4"
+  },
+  "browserslist": [
+    "last 1 chrome version"
+  ]
 }
