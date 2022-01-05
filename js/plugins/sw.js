@@ -30,13 +30,13 @@ async function cachedResponse(request) {
 async function precache(){
     const cache = await caches.open(VERSION);
     return cache.addAll([
-        '/index.html',
-        '/assets/icon.ico',
-        '/js/index.js',
-        '/js/MediaPlayer.js',
-        '/js/plugins/AutoPlay.js',
-        '/js/plugins/AutoPause.js',
-        '/assets/index.css',
-        '/assets/BigBuckBunny.mp4'
+        //'/index.html',
+        //'/assets/icon.ico',
+        //'/js/index.js',
+        //'/js/MediaPlayer.js',
+        //'/js/plugins/AutoPlay.js',
+        //'/js/plugins/AutoPause.js',
+        //'/assets/index.css',
+        //'/assets/BigBuckBunny.mp4'
     ]);
 }
