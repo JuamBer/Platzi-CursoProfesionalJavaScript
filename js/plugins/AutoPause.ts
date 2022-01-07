@@ -18,7 +18,7 @@ class AutoPause {
             threshold: this.threshold,
         });
 
-        observer.observe(this.player.media);
+        observer.observe(this.player.getMedia());
 
         document.addEventListener('visibilitychange', ()=>{
             this.handleVisibilityChange();
