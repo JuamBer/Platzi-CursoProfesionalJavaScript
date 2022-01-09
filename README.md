@@ -21,4 +21,4 @@ Material realizado en el curso de "Profesional De JavaScript" de [Platzi](https:
 
 ## Certificación 🎓
 
-![Certificación](https://github.com/JuamBer/CursoProfesionalJavaScript/blob/master/img-licencia/diploma-javascript-profesional.jpg)
+![Certificación](https://github.com/JuamBer/Platzi-CursoProfesionalJavaScript/blob/master/img-licencia/diploma-javascript-profesional.jpg?raw=true)
